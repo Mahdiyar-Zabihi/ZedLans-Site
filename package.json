@@ -1,0 +1,63 @@
+{
+  "name": "zedlans",
+  "version": "1.0.0",
+  "keywords": [
+    "CV",
+    "Npm",
+    "Node",
+    "Express",
+    "PassPort"
+  ],
+  "description": "ZedLans CV-Site With SSR",
+  "files": [
+    "App.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "Mahdiyar Zabihi <mahdiyarzabihi2000@gmail.com>",
+  "main": "App.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node ./App.js",
+    "TailWind": "npx tailwindcss -i ./Public/Assets/Styles/Main/Styles.css -o ./Public/Assets/Styles/Dist/Main.css --watch --minify",
+    "Dev": "nodemon ./App.js"
+  },
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=14.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahdiyar-Zabihi/ZedLans-Site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mahdiyar-Zabihi/ZedLans-Site/issues"
+  },
+  "dependencies": {
+    "auto-bind": "4.0.0",
+    "bcryptjs": "2.4.3",
+    "connect-flash": "0.1.1",
+    "connect-mongo": "4.6.0",
+    "cookie-parser": "1.4.6",
+    "dotenv": "16.0.2",
+    "ejs": "3.1.8",
+    "express": "4.18.1",
+    "express-mongo-sanitize": "2.2.0",
+    "express-rate-limit": "6.6.0",
+    "express-session": "1.17.3",
+    "express-validator": "6.14.2",
+    "helmet": "6.0.0",
+    "hpp": "0.2.3",
+    "mongoose": "6.6.0",
+    "passport": "0.6.0",
+    "passport-local": "1.0.0",
+    "winston": "3.8.2",
+    "xss-clean": "0.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "0.5.3",
+    "@tailwindcss/typography": "0.5.7",
+    "tailwindcss": "3.1.8"
+  }
+}

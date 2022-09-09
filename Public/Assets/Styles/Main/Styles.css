@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@tailwind base;
+@tailwind components;
+
+
+/* Reset Base Styles Start:Part */
+*:not(i),*:not(i)::before,*:not(i)::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-display:swap;
+}
+body{
+    direction:rtl;
+}
+/* Reset Base Styles End:Part */
+
+
+@tailwind utilities;
