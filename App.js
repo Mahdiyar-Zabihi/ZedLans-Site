@@ -18,9 +18,9 @@ require('./Startup/middlewares')(express,app,config);
 app.use('/',allRoutes);
 
 
-//Running
+//Runnig
 const runValues=Object.freeze({
     port:config.port || 3000,
     mode:config.isDebug,
 });
-app.listen(runValues.port,err=>{if(err) console.log(`\n Run Field On Port : ${runValues.port}. Run-Mode : ${runValues.mode?'Debug':'Deploy'}`);else{console.log(`\n Run Successfully On Port : ${runValues.port}. Run-Mode : ${runValues.mode?'Debug':'Deploy'}`);}});
+app.listen(runValues.port,err=>{console.log(`\n Run-Mode : ${runValues.mode?'Debug':'Deploy'}.`);if(err) console.log(`\n Run Field On Port : ${runValues.port}.`); else{console.log(`\n Run Successfully On Port : ${runValues.port}.`);}});

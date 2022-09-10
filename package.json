@@ -1,41 +1,35 @@
 {
-  "name": "zedlans",
-  "version": "1.0.0",
-  "keywords": [
-    "CV",
-    "Npm",
-    "Node",
-    "Express",
-    "PassPort"
-  ],
-  "description": "ZedLans CV-Site With SSR",
-  "files": [
-    "App.js",
-    "LICENSE",
-    "README.md"
-  ],
-  "author": "Mahdiyar Zabihi <mahdiyarzabihi2000@gmail.com>",
-  "main": "App.js",
-  "type": "commonjs",
-  "scripts": {
-    "start": "node ./App.js",
-    "TailWind": "npx tailwindcss -i ./Public/Assets/Styles/Main/Styles.css -o ./Public/Assets/Styles/Dist/Main.css --watch --minify",
-    "Dev": "nodemon ./App.js"
+  "name":"zedlans",
+  "version":"1.0.0",
+  "keywords":["CV","Npm","Node","Express","PassPort"],
+  "description":"ZedLans CV-Site With SSR",
+  "files":["App.js","LICENSE","README.md"],
+  "author":"Mahdiyar Zabihi <mahdiyarzabihi2000@gmail.com>",
+
+  "main":"App.js",
+  "type":"commonjs",
+  "scripts":{
+    "start":"node ./App.js",
+    "TailWind":"npx tailwindcss -i ./Public/Assets/Styles/Main/Styles.css -o ./Public/Assets/Styles/Dist/Main.css --watch --minify",
+    "Dev":"nodemon ./App.js"
   },
-  "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=14.0.0"
+  "engines":{
+    "npm":">=6.0.0",
+    "node":">=14.0.0"
   },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mahdiyar-Zabihi/ZedLans-Site.git"
+
+  "license":"MIT",
+  "repository":{
+    "type":"git",
+    "url":"git+https://github.com/Mahdiyar-Zabihi/ZedLans-Site.git"
   },
-  "bugs": {
-    "url": "https://github.com/Mahdiyar-Zabihi/ZedLans-Site/issues"
+  "bugs":{
+    "url":"https://github.com/Mahdiyar-Zabihi/ZedLans-Site/issues"
   },
-  "dependencies": {
+
+  "dependencies":{
     "auto-bind": "4.0.0",
+    "axios": "0.27.2",
     "bcryptjs": "2.4.3",
     "connect-flash": "0.1.1",
     "connect-mongo": "4.6.0",
@@ -55,9 +49,10 @@
     "winston": "3.8.2",
     "xss-clean": "0.1.1"
   },
-  "devDependencies": {
-    "@tailwindcss/forms": "0.5.3",
-    "@tailwindcss/typography": "0.5.7",
-    "tailwindcss": "3.1.8"
+  "devDependencies":{
+    "nodemon":"2.0.19",
+    "tailwindcss":"3.1.8",
+    "@tailwindcss/forms":"0.5.3",
+    "@tailwindcss/typography":"0.5.7"
   }
 }

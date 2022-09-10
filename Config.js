@@ -6,8 +6,10 @@ module.exports=Object.freeze({
     logFileName:path.resolve(__dirname,'LogFile.log').trim(),
     publicPath:path.resolve(__dirname,'Public').trim(),
 
-    viewsPath:path.resolve(__dirname,'Views').trim(),
-    viewEngineName:'ejs',
+    viewEngine:{
+        name:'ejs'.trim(),
+        path:path.resolve(__dirname,'Views').trim(),
+    },
 
     reqLimit:{
         count:40,

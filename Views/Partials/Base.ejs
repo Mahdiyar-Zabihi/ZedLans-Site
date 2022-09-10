@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title> زدلنس<%= PageTitle ? ' - ' : '' %><%= PageTitle ? PageTitle : '' %> </title>
+        <meta name="geo.region" content="IR-07">
+        <meta name="geo.placename" content="Tehran">
+        <meta name="geo.position" content="32.647531;54.564352">
+        <meta name="ICBM" content="32.647531, 54.564352">
+        <meta name="language" content="fa-IR">
+        <meta name="rating" content="general">
+        <meta name="distribution" content="global">
+        <meta property="og:locale" content="fa_ir">
+        <meta name="robots" content="<%= PageIndex ? 'index, follow' : 'noindex, nofollow' %>">
+        <meta name="category" content="Blog, Weblog, Article, Online Platform">
+        <link rel="preconnect" href="https://zedlans.ir">
+        <meta property="og:url" content="https://zedlans.ir">
+        <meta property="og:site_name" content="زدلنس">
+        <meta name="author" content="<%= PageBaseAuther ? 'Mahdiyar Zabihi, mahdiyarzabihi2000@gmail.com, www.zedlans.ir' : PageBaseAuther %>">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="/Assets/Styles/Dist/Main.css">
+        <link rel="icon" type="image/png" href="/Assets/Imgs/Site/Main/ZedLans-Favicon.png">
+        <link rel="shortcut icon" type="image/png" href="/Assets/Imgs/Site/Main/ZedLans-Favicon.png">
+        <meta name="keywords" content="<%= PageKeywords.length >= 1 ? PageKeywords.join(', ') : ['ZedLans','Zedlans','zedlans','زدلنس','وبسایت زدلنس','ZedLans Site','Zedlans Site'].join(', ') %>">
+        <meta name="description" content="  وبسایت زدلنس<%= PageDescription ? ' - ' : '' %><%= PageDescription %>  ">
+        <% if(PageIndex){ %><meta property="og:title" content=" زدلنس<%= PageOgTitle ? ' - ' : '' %><%= PageOgTitle ? PageOgTitle : '' %> ">
+        <meta property="og:image" content="/Assets/Imgs/Site-Imgs/ZedLans-Big-Icon.png"><% } %> 
+        <meta property="og:description" content="  وبسایت زدلنس<%= PageDescription ? ' - ' : '' %><%= PageDescription %>  ">
+        <!-- <meta name="theme-color" content="#3d97b3"> -->
+        <!-- <meta name="revised" content="will be completed"> -->
+        <script src="Assets/Js/Scripts.js" defer></script>

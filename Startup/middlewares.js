@@ -9,6 +9,7 @@ const expressSession=require('express-session');
 const reqRateLimit=require('express-rate-limit');
 const mongoSanitize=require('express-mongo-sanitize');
 
+
 module.exports=(expressServer,expressApp,configObg)=>{
     expressApp.use(xssClean());
     expressApp.use(helmet());
@@ -23,8 +24,8 @@ module.exports=(expressServer,expressApp,configObg)=>{
     const reqRateLimitOptions=reqRateLimit.rateLimit({windowMs:configObg.reqLimit.time,max:configObg.reqLimit.count,message:configObg.reqLimit.msg,});
     expressApp.use(reqRateLimitOptions);
 
-    expressApp.set('view engine',configObg.viewEngineName);
-    expressApp.set('views',configObg.viewsPath);
+    expressApp.set('view engine',configObg.viewEngine.name);
+    expressApp.set('views',configObg.viewEngine.path);
 
     expressApp.use(cookieParser(process.env.COOKIE_SECRET));
     expressApp.use(expressSession({
@@ -39,8 +40,8 @@ module.exports=(expressServer,expressApp,configObg)=>{
     expressApp.use(connectFlash());
 
     // require('./../passport/passport-local');
-    // expressApp.use(passport.initialize());
-    // expressApp.use(passport.session());
+    expressApp.use(passport.initialize());
+    expressApp.use(passport.session());
 
     expressApp.use((req,res,next)=>{
         res.locals.GlbVal={

@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /Admin
-Disallow: /UserPanel
+Disallow: /Panel
+Disallow: /Api
